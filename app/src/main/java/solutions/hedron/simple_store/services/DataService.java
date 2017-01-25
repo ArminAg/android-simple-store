@@ -18,29 +18,29 @@ public class DataService {
     }
 
     public ArrayList<CategoryItem> getGameItems(){
-        ArrayList<CategoryItem> games = new ArrayList<>();
-        games.add(new CategoryItem("Flight Simulator", "flightplanmusic"));
-        games.add(new CategoryItem("Bicycle Racing", "bicyclemusic"));
-        games.add(new CategoryItem("Kids Game", "kidsmusic"));
+        ArrayList<CategoryItem> gamesList = new ArrayList<>();
+        gamesList.add(new CategoryItem("Flight Simulator", "flightplanmusic"));
+        gamesList.add(new CategoryItem("Bicycle Racing", "bicyclemusic"));
+        gamesList.add(new CategoryItem("Kids Game", "kidsmusic"));
 
-        return games;
+        return gamesList;
     }
 
     public ArrayList<CategoryItem> getProductivityItems(){
-        ArrayList<CategoryItem> games = new ArrayList<>();
-        games.add(new CategoryItem("Password Protect", "keymusic"));
-        games.add(new CategoryItem("Flight Planner", "flightplanmusic"));
-        games.add(new CategoryItem("Business Planning", "socialmusic"));
+        ArrayList<CategoryItem> productivityList = new ArrayList<>();
+        productivityList.add(new CategoryItem("Password Protect", "keymusic"));
+        productivityList.add(new CategoryItem("Flight Planner", "flightplanmusic"));
+        productivityList.add(new CategoryItem("Business Planning", "socialmusic"));
 
-        return games;
+        return productivityList;
     }
 
     public ArrayList<CategoryItem> getHealthItems(){
-        ArrayList<CategoryItem> games = new ArrayList<>();
-        games.add(new CategoryItem("Music Player", "vinylmusic"));
-        games.add(new CategoryItem("Meditation", "socialmusic"));
-        games.add(new CategoryItem("Riding Bicycle", "bicyclemusic"));
+        ArrayList<CategoryItem> healthList = new ArrayList<>();
+        healthList.add(new CategoryItem("Music Player", "vinylmusic"));
+        healthList.add(new CategoryItem("Meditation", "socialmusic"));
+        healthList.add(new CategoryItem("Riding Bicycle", "bicyclemusic"));
 
-        return games;
+        return healthList;
     }
 }

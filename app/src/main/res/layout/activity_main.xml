@@ -4,7 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="solutions.hedron.simple_store.MainActivity">
+    tools:context="solutions.hedron.simple_store.activities.MainActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
