@@ -15,10 +15,10 @@ public class CategoryItem {
     }
 
     public String getItemTitle() {
-        return DRAWABLE + itemTitle;
+        return itemTitle;
     }
 
     public String getItemImageUri() {
-        return itemImageUri;
+        return DRAWABLE + itemImageUri;
     }
 }

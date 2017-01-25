@@ -3,11 +3,16 @@ package solutions.hedron.simple_store.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutCompat;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import solutions.hedron.simple_store.R;
+import solutions.hedron.simple_store.adapters.CategoriesAdapter;
+import solutions.hedron.simple_store.services.DataService;
 
 public class CategoryFragment extends Fragment {
 
@@ -50,8 +55,26 @@ public class CategoryFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_category, container, false);
+        View view = inflater.inflate(R.layout.fragment_category, container, false);
+
+        CategoriesAdapter categoriesAdapter;
+        if (categoryType == CATEGORY_TYPE_GAMES){
+            categoriesAdapter = new CategoriesAdapter(DataService.getInstance().getGameItems());
+        } else if (categoryType == CATEGORY_TYPE_PRODUCTIVITY) {
+            categoriesAdapter = new CategoriesAdapter(DataService.getInstance().getProductivityItems());
+        } else {
+            categoriesAdapter = new CategoriesAdapter(DataService.getInstance().getHealthItems());
+        }
+
+        RecyclerView recyclerView = (RecyclerView)view.findViewById(R.id.recycler_categories);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setAdapter(categoriesAdapter);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        recyclerView.setLayoutManager(linearLayoutManager);
+
+        return view;
     }
 
 }
