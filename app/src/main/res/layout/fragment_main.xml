@@ -19,13 +19,17 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/gamesText"
                 android:textSize="24sp"
-                android:textColor="#1f0000" />
+                android:textColor="#1f0000"
+                android:paddingLeft="16dp"
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:text="New and Updated"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/gamesSubText" />
+                android:id="@+id/gamesSubText"
+                android:paddingLeft="16dp"
+                android:layout_marginBottom="10dp" />
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -40,13 +44,17 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/productivityText"
                 android:textSize="24sp"
-                android:textColor="#1f0000" />
+                android:textColor="#1f0000"
+                android:paddingLeft="16dp"
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:text="Based on your recent installs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/productivitySubText" />
+                android:id="@+id/productivitySubText"
+                android:paddingLeft="16dp"
+                android:layout_marginBottom="10dp" />
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -61,13 +69,17 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/healthText"
                 android:textSize="24sp"
-                android:textColor="#1f0000" />
+                android:textColor="#1f0000"
+                android:paddingLeft="16dp"
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:text="Stay Fit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/healthSubText" />
+                android:id="@+id/healthSubText"
+                android:paddingLeft="16dp"
+                android:layout_marginBottom="10dp" />
 
             <FrameLayout
                 android:layout_width="match_parent"

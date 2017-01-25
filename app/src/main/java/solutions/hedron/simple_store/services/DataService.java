@@ -20,26 +20,26 @@ public class DataService {
     public ArrayList<CategoryItem> getGameItems(){
         ArrayList<CategoryItem> games = new ArrayList<>();
         games.add(new CategoryItem("Flight Simulator", "flightplanmusic"));
-        games.add(new CategoryItem("Riding Bicycle", "bicyclemusic"));
-        games.add(new CategoryItem("Kids Jams", "kidsmusic"));
+        games.add(new CategoryItem("Bicycle Racing", "bicyclemusic"));
+        games.add(new CategoryItem("Kids Game", "kidsmusic"));
 
         return games;
     }
 
     public ArrayList<CategoryItem> getProductivityItems(){
         ArrayList<CategoryItem> games = new ArrayList<>();
-        games.add(new CategoryItem("Flight Simulator", "flightplanmusic"));
-        games.add(new CategoryItem("Riding Bicycle", "bicyclemusic"));
-        games.add(new CategoryItem("Kids Jams", "kidsmusic"));
+        games.add(new CategoryItem("Password Protect", "keymusic"));
+        games.add(new CategoryItem("Flight Planner", "flightplanmusic"));
+        games.add(new CategoryItem("Business Planning", "socialmusic"));
 
         return games;
     }
 
     public ArrayList<CategoryItem> getHealthItems(){
         ArrayList<CategoryItem> games = new ArrayList<>();
-        games.add(new CategoryItem("Flight Simulator", "flightplanmusic"));
+        games.add(new CategoryItem("Music Player", "vinylmusic"));
+        games.add(new CategoryItem("Meditation", "socialmusic"));
         games.add(new CategoryItem("Riding Bicycle", "bicyclemusic"));
-        games.add(new CategoryItem("Kids Jams", "kidsmusic"));
 
         return games;
     }
