@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 import solutions.hedron.simple_store.R;
+import solutions.hedron.simple_store.activities.MainActivity;
 import solutions.hedron.simple_store.holders.CategoryItemViewHolder;
 import solutions.hedron.simple_store.models.CategoryItem;
 
@@ -35,7 +36,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoryItemViewHold
         holder.itemView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                // Load Details Screen
+                MainActivity.getMainActivity().loadDetailsScreen(item);
             }
         });
     }

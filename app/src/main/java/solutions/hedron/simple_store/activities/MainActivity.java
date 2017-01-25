@@ -4,7 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import solutions.hedron.simple_store.R;
+import solutions.hedron.simple_store.fragments.DetailsFragment;
 import solutions.hedron.simple_store.fragments.MainFragment;
+import solutions.hedron.simple_store.models.CategoryItem;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager()
                 .beginTransaction()
                 .add(R.id.fragmentsContainer, MainFragment.newInstance())
+                .commit();
+    }
+
+    public void loadDetailsScreen(CategoryItem categoryItem){
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragmentsContainer, new DetailsFragment())
+                .addToBackStack(null)
                 .commit();
     }
 }
