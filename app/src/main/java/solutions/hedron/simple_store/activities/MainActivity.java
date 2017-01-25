@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     public void loadDetailsScreen(CategoryItem categoryItem){
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.fragmentsContainer, new DetailsFragment())
+                .replace(R.id.fragmentsContainer, DetailsFragment.newInstance(categoryItem.getItemTitle(), categoryItem.getItemImageUri()))
                 .addToBackStack(null)
                 .commit();
     }
