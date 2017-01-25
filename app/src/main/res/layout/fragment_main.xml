@@ -4,10 +4,78 @@
     android:layout_height="match_parent"
     tools:context="solutions.hedron.simple_store.fragments.MainFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Games"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gamesText"
+                android:textSize="24sp"
+                android:textColor="#1f0000" />
+
+            <TextView
+                android:text="New and Updated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gamesSubText" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/containerTopRow">
+
+            </FrameLayout>
+
+            <TextView
+                android:text="Productivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/productivityText"
+                android:textSize="24sp"
+                android:textColor="#1f0000" />
+
+            <TextView
+                android:text="Based on your recent installs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/productivitySubText" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/containerMiddleRow">
+
+            </FrameLayout>
+
+            <TextView
+                android:text="Health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/healthText"
+                android:textSize="24sp"
+                android:textColor="#1f0000" />
+
+            <TextView
+                android:text="Stay Fit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/healthSubText" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/containerBottomRow">
+
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
 </FrameLayout>
